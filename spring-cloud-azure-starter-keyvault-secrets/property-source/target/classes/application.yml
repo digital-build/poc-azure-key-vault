@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources:
+            - name: key-vault-property-source-1
+              endpoint: https://jena-key-demo.vault.azure.net/
+            # - name: key-vault-property-source-2
+            #   endpoint: https://kvccdevcibc.vault.azure.net/
